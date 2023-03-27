@@ -1,0 +1,15 @@
+@baseUrl = http://localhost:5000
+
+@urlPath = api/v1
+
+
+### Get all stations
+GET {{baseUrl}}/{{urlPath}}/stations
+Content-Type: application/json
+Accept: application/json
+
+
+### Get all journeys
+GET {{baseUrl}}/{{urlPath}}/journeys
+Content-Type: application/json
+Accept: application/json
