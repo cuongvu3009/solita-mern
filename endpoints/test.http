@@ -10,6 +10,11 @@ Accept: application/json
 
 
 ### Get all journeys
-GET {{baseUrl}}/{{urlPath}}/journeys
+GET {{baseUrl}}/{{urlPath}}/journeys?page=1&size=4
+Content-Type: application/json
+Accept: application/json
+
+### Get single journeys
+GET {{baseUrl}}/{{urlPath}}/journeys/64221383d5294a3e87d9988d
 Content-Type: application/json
 Accept: application/json

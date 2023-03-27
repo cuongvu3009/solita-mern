@@ -1,5 +1,5 @@
 import express, { Express } from 'express';
-import { ChattyServer } from './setupServer';
+import { NodeServer } from './setupServer';
 import databaseConnection from './setupDatabase';
 import { config } from './config';
 
@@ -8,7 +8,7 @@ class Application {
     this.loadConfig();
     databaseConnection();
     const app: Express = express();
-    const server: ChattyServer = new ChattyServer(app);
+    const server: NodeServer = new NodeServer(app);
     server.start();
   }
 
